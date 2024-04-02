@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="PF Suite">
+    <test name="PF Tests">
+        <groups>
+            <run>
+                <include name="Login" />
+            </run>
+        </groups>
+
+        <classes>
+            <class name="AutomatedWebTests.AllTests"/>
+        </classes>
+    </test> <!-- Test -->
+</suite> <!-- Suite -->
