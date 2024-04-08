@@ -7,7 +7,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import java.time.Duration;
 
 public class ProfilePage {
-    public static final String PROFILE_PAGE_URL = "http://training.skillo-bg.com:4200/users/";
+    public static final String PROFILE_PAGE_URL = "http://training.skillo-bg.com:4300/users/";
     private final WebDriver webDriver;
     public ProfilePage(WebDriver driver){
         this.webDriver = driver;

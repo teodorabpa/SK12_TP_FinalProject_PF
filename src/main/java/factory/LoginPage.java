@@ -10,7 +10,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import java.time.Duration;
 
 public class LoginPage {
-    public static final String LOGIN_PAGE_URL = "http://training.skillo-bg.com:4200/users/login";
+    public static final String LOGIN_PAGE_URL = "http://training.skillo-bg.com:4300/users/login";
     private final WebDriver webDriver;
 
     @FindBy(id="defaultLoginFormUsername")
@@ -25,6 +25,9 @@ public class LoginPage {
     @FindBy(id="sign-in-button")
     private WebElement signInButton;
 
+    @FindBy(xpath = "//a[@href='/users/register']")
+    private WebElement registerButton;
+
     public LoginPage(WebDriver driver){
         this.webDriver = driver;
         PageFactory.initElements(driver, this);
@@ -38,7 +41,7 @@ public class LoginPage {
         wait.until(ExpectedConditions.visibilityOf(usernameTextField));
         usernameTextField.sendKeys(username);
     }
-    public void fillInPassword(String password) {
+    public void fillInPassword(String password){
         WebDriverWait wait = new WebDriverWait(this.webDriver, Duration.ofSeconds(15));
         wait.until(ExpectedConditions.visibilityOf(passwordTextField));
         passwordTextField.sendKeys(password);
@@ -51,9 +54,15 @@ public class LoginPage {
     public boolean isCheckedRememberMe(){
         return rememberMeCheckbox.isSelected();
     }
+
     public void clickSignIn(){
         WebDriverWait wait = new WebDriverWait(this.webDriver, Duration.ofSeconds(15));
         wait.until(ExpectedConditions.elementToBeClickable(signInButton));
         signInButton.click();
+    }
+    public void clickRegisterButton(){
+        WebDriverWait wait = new WebDriverWait(this.webDriver, Duration.ofSeconds(15));
+        wait.until(ExpectedConditions.elementToBeClickable(registerButton));
+        registerButton.click();
     }
 }
