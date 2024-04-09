@@ -5,16 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e509dbd0-1bd7-4351-a5b6-050f2ffbc074" name="Changes" comment="Added Register Page in the Factory">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/factory/ModifyProfilePage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/factory/ToastContainer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Dowload_Upload_Testobject/DownloadTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Dowload_Upload_Testobject/TestObject.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/upload/costa-rica-8606850_640.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/factory/ProfilePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/factory/ProfilePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/factory/RegisterPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/factory/RegisterPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/AutomatedWebTests/AllTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/AutomatedWebTests/AllTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/factory/Header.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/factory/Header.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,7 +63,7 @@
       <recent name="C:\Users\btp\IdeaProjects\SK12_TP_FinalProject_PF\src\test\java" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.AllTests.editProfile (3)">
+  <component name="RunManager" selected="TestNG.AllTests.editProfile">
     <configuration name="AllTests.editProfile (1)" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="SK12_TP_FinalProject_PF" />
       <extension name="coverage">
@@ -164,10 +156,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.AllTests.editProfile" />
         <item itemvalue="TestNG.AllTests.editProfile (3)" />
         <item itemvalue="TestNG.AllTests.editProfile (2)" />
         <item itemvalue="TestNG.AllTests.editProfile (1)" />
-        <item itemvalue="TestNG.AllTests.editProfile" />
         <item itemvalue="TestNG.AllTests.registerTest (2)" />
       </list>
     </recent_temporary>

@@ -29,7 +29,7 @@ public class Header {
         wait.until(ExpectedConditions.elementToBeClickable(loginLink));
         loginLink.click(); }
     public void clickProfile() {
-        WebDriverWait wait = new WebDriverWait(this.webDriver, Duration.ofSeconds(15));
+        WebDriverWait wait = new WebDriverWait(this.webDriver, Duration.ofSeconds(35));
         wait.until(ExpectedConditions.elementToBeClickable(profilePageLink));
         profilePageLink.click();
     }
