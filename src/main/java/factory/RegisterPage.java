@@ -57,13 +57,12 @@ public class RegisterPage {
         emailTextField.sendKeys(email);
     }
 
-    public void fillInDateOfBirth(String dateOfBirth) {
+    public void fillInDateOfBirth(String birthDay, String birthMonth, String birthYear) {
         wait.until(ExpectedConditions.visibilityOf(dateOfBirthField));
-        dateOfBirthField.sendKeys("birthDay");
+        dateOfBirthField.sendKeys(birthDay);
+        dateOfBirthField.sendKeys(birthMonth);
         dateOfBirthField.sendKeys(Keys.TAB);
-        dateOfBirthField.sendKeys("birthMonth");
-        dateOfBirthField.sendKeys(Keys.TAB);
-        dateOfBirthField.sendKeys("birthYear");
+        dateOfBirthField.sendKeys(birthYear);
     }
 
     public void fillInPassword(String password) {

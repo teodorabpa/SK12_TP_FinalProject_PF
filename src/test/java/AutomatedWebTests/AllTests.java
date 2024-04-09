@@ -2,12 +2,21 @@ package AutomatedWebTests;
 
 import factory.*;
 import io.github.bonigarcia.wdm.WebDriverManager;
+import org.apache.commons.logging.Log;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
+
+import java.time.Duration;
 
 public class AllTests {
     ChromeDriver webDriver;
@@ -61,7 +70,7 @@ public class AllTests {
     }
 
     @Test(dataProvider = "getUserCredentials", groups = "Login")
-    public void loginUnsuccessfulTest(String username, String password, String userId){
+    public void loginUnsuccessfulTest(String username, String password){
         HomePage homePage = new HomePage (webDriver);
         Header header = new Header (webDriver);
         LoginPage loginPage = new LoginPage (webDriver);
@@ -94,7 +103,7 @@ public class AllTests {
     @DataProvider(name="getUserRegisterCredentials")
     public Object[][] getUserRegisterCredentials() {
         return new Object[][]{
-                {"Tedi@P.com3", "Tedi@P.com3", "17", "09", "1984", "Ted@P.com3", "Ted@P.com3", "Loren ipsum sit amet dolor"},
+                {"Ted3@P.com", "Ted3@P.com", "17", "09", "1984", "Ted3@P.com", "Ted3@P.com", "Loren ipsum sit amet dolor"},
         };
     }
 
@@ -111,14 +120,61 @@ public class AllTests {
         Assert.assertTrue(registerPage.isUrlLoaded(), "Current page is not Register page");
         registerPage.fillInUserName(username);
         registerPage.fillInEmail(email);
-        registerPage.fillInDateOfBirth(birthDay);
-        registerPage.fillInDateOfBirth(birthMonth);
-        registerPage.fillInDateOfBirth(birthYear);
+        registerPage.fillInDateOfBirth(birthDay, birthMonth, birthYear);
         registerPage.fillInPassword(password);
         registerPage.fillInConfirmPassword(confirmPassword);
         registerPage.fillInPublicInfo(publicInfo);
         registerPage.clickSignIn();
-        Assert.assertTrue(loginPage.isUrlLoaded(), "Current page is not Login page");
+        Assert.assertTrue(homePage.isUserLoaded(), "Current page is not Home page");
+
+    }
+    @Test(dataProvider = "getUserRegisterCredentials", groups = "Login", dependsOnMethods = "registerTest")
+    public void registerTestFail(String username, String email, String birthDay, String birthMonth, String birthYear, String password, String confirmPassword, String publicInfo) {
+        HomePage homePage = new HomePage(webDriver);
+        Header header = new Header(webDriver);
+        LoginPage loginPage = new LoginPage(webDriver);
+        RegisterPage registerPage = new RegisterPage(webDriver);
+        ToastContainer toastContainer = new ToastContainer(webDriver);
+
+        homePage.navigateTo();
+        header.clickLogin();
+        loginPage.clickRegisterButton();
+        Assert.assertTrue(registerPage.isUrlLoaded(), "Current page is not Register page");
+        registerPage.fillInUserName(username);
+        registerPage.fillInEmail(email);
+        registerPage.fillInDateOfBirth(birthDay, birthMonth, birthYear);
+        registerPage.fillInPassword(password);
+        registerPage.fillInConfirmPassword(confirmPassword);
+        registerPage.fillInPublicInfo(publicInfo);
+        registerPage.clickSignIn();
+        toastContainer.getAlertText();
+        Assert.assertEquals(toastContainer.getAlertText(), "Username taken");
+
+    }
+
+    @DataProvider(name="getEditUserCredentials")
+    public Object[][] getEditUserCredentials() {
+        return new Object[][]{
+                {"Ted3@P.com", "Ted3@P.com", "public info text"},
+        };
+    }
+    @Test(dataProvider = "getEditUserCredentials", groups = "Login")
+    public void editProfile(String username, String password, String publicInfo) {
+        HomePage homePage = new HomePage(webDriver);
+        Header header = new Header(webDriver);
+        LoginPage loginPage = new LoginPage(webDriver);
+        ProfilePage profilePage = new ProfilePage(webDriver);
+        ModifyProfilePage modifyProfilePage = new ModifyProfilePage(webDriver);
+
+        homePage.navigateTo();
+        header.clickLogin();
+        loginPage.fillInUserName(username);
+        loginPage.fillInPassword(password);
+        loginPage.clickSignIn();
+        header.clickProfile();
+        profilePage.clickEditProfileButton();
+        modifyProfilePage.fillInPublicInfoTextField(publicInfo);
+        modifyProfilePage.clickSave();
 
     }
 

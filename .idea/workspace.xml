@@ -4,12 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e509dbd0-1bd7-4351-a5b6-050f2ffbc074" name="Changes" comment="First commit">
-      <change afterPath="$PROJECT_DIR$/src/main/java/factory/RegisterPage.java" afterDir="false" />
+    <list default="true" id="e509dbd0-1bd7-4351-a5b6-050f2ffbc074" name="Changes" comment="Added Register Page in the Factory">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/factory/ModifyProfilePage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/factory/ToastContainer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Dowload_Upload_Testobject/DownloadTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Dowload_Upload_Testobject/TestObject.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/upload/costa-rica-8606850_640.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/factory/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/factory/HomePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/factory/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/factory/LoginPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/factory/ProfilePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/factory/ProfilePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/factory/RegisterPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/factory/RegisterPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/AutomatedWebTests/AllTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/AutomatedWebTests/AllTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -43,10 +47,17 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "TestNG.AllTests.editProfile (1).executor": "Run",
+    "TestNG.AllTests.editProfile (2).executor": "Run",
+    "TestNG.AllTests.editProfile (3).executor": "Run",
+    "TestNG.AllTests.editProfile.executor": "Run",
     "TestNG.AllTests.executor": "Run",
-    "TestNG.AllTests.registerTest (1).executor": "Debug",
+    "TestNG.AllTests.registerTest (1).executor": "Run",
     "TestNG.AllTests.registerTest (2).executor": "Run",
-    "TestNG.AllTests.registerTest.executor": "Debug",
+    "TestNG.AllTests.registerTest (3).executor": "Run",
+    "TestNG.AllTests.registerTest.executor": "Run",
+    "TestNG.AllTests.registerTestFail (1).executor": "Debug",
+    "TestNG.AllTests.registerTestFail.executor": "Run",
     "TestNG.C:/Users/btp/IdeaProjects/SK12_TP_FinalProject_PF/src/test/java/GroupedTests.xml.executor": "Run",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
@@ -56,11 +67,12 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\btp\IdeaProjects\SK12_TP_FinalProject_PF\src\test\resources\upload" />
       <recent name="C:\Users\btp\IdeaProjects\SK12_TP_FinalProject_PF\src\test\java" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.AllTests.registerTest (2)">
-    <configuration name="AllTests.registerTest (1)" type="TestNG" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="TestNG.AllTests.editProfile (3)">
+    <configuration name="AllTests.editProfile (1)" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="SK12_TP_FinalProject_PF" />
       <extension name="coverage">
         <pattern>
@@ -70,7 +82,61 @@
       </extension>
       <option name="PACKAGE_NAME" value="AutomatedWebTests" />
       <option name="MAIN_CLASS_NAME" value="AutomatedWebTests.AllTests" />
-      <option name="METHOD_NAME" value="registerTest" />
+      <option name="METHOD_NAME" value="editProfile" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AllTests.editProfile (2)" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="SK12_TP_FinalProject_PF" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="AutomatedWebTests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="AutomatedWebTests" />
+      <option name="MAIN_CLASS_NAME" value="AutomatedWebTests.AllTests" />
+      <option name="METHOD_NAME" value="editProfile" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AllTests.editProfile (3)" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="SK12_TP_FinalProject_PF" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="AutomatedWebTests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="AutomatedWebTests" />
+      <option name="MAIN_CLASS_NAME" value="AutomatedWebTests.AllTests" />
+      <option name="METHOD_NAME" value="editProfile" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AllTests.editProfile" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="SK12_TP_FinalProject_PF" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="AutomatedWebTests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="AutomatedWebTests" />
+      <option name="MAIN_CLASS_NAME" value="AutomatedWebTests.AllTests" />
+      <option name="METHOD_NAME" value="editProfile" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -96,40 +162,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AllTests.registerTest" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="SK12_TP_FinalProject_PF" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="AutomatedWebTests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="AutomatedWebTests" />
-      <option name="MAIN_CLASS_NAME" value="AutomatedWebTests.AllTests" />
-      <option name="METHOD_NAME" value="registerTest" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="C:/Users/btp/IdeaProjects/SK12_TP_FinalProject_PF/src/test/java/GroupedTests.xml" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="SK12_TP_FinalProject_PF" />
-      <option name="SUITE_NAME" value="$PROJECT_DIR$/src/test/java/GroupedTests.xml" />
-      <option name="TEST_OBJECT" value="SUITE" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.AllTests.editProfile (3)" />
+        <item itemvalue="TestNG.AllTests.editProfile (2)" />
+        <item itemvalue="TestNG.AllTests.editProfile (1)" />
+        <item itemvalue="TestNG.AllTests.editProfile" />
         <item itemvalue="TestNG.AllTests.registerTest (2)" />
-        <item itemvalue="TestNG.AllTests.registerTest (1)" />
-        <item itemvalue="TestNG.AllTests.registerTest" />
-        <item itemvalue="TestNG.C:/Users/btp/IdeaProjects/SK12_TP_FinalProject_PF/src/test/java/GroupedTests.xml" />
       </list>
     </recent_temporary>
   </component>
@@ -150,7 +189,15 @@
       <option name="project" value="LOCAL" />
       <updated>1712067304531</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Added Register Page in the Factory">
+      <option name="closed" value="true" />
+      <created>1712575906143</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1712575906143</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -166,7 +213,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="First commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="First commit" />
+    <MESSAGE value="Added Register Page in the Factory" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added Register Page in the Factory" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -175,11 +223,6 @@
           <url>file://$PROJECT_DIR$/src/main/java/org/example/Main.java</url>
           <line>13</line>
           <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/AutomatedWebTests/AllTests.java</url>
-          <line>119</line>
-          <option name="timeStamp" value="15" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
