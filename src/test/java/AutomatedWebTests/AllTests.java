@@ -45,7 +45,7 @@ public class AllTests {
         HomePage homePage = new HomePage(webDriver);
 
         homePage.navigateTo();
-        Assert.assertTrue(homePage.isUserLoaded(), "Homepage url is not loaded");
+        Assert.assertTrue(homePage.isUrlLoaded(), "Homepage url is not loaded");
     }
 
     @Test(dataProvider = "getUserCredentials", groups = "Login")
@@ -56,7 +56,7 @@ public class AllTests {
         ProfilePage profilePage = new ProfilePage(webDriver);
 
         homePage.navigateTo();
-        Assert.assertTrue(homePage.isUserLoaded(), "Homepage url is not loaded");
+        Assert.assertTrue(homePage.isUrlLoaded(), "Homepage url is not loaded");
         header.clickLogin();
         Assert.assertTrue(loginPage.isUrlLoaded(), "Login page url is not loaded");
         loginPage.fillInUserName(username);
@@ -124,7 +124,7 @@ public class AllTests {
         registerPage.fillInPassword(password);
         registerPage.fillInConfirmPassword(confirmPassword);
         registerPage.clickSignIn();
-        Assert.assertTrue(homePage.isUserLoaded(), "Current page is not Home page");
+        Assert.assertTrue(homePage.isUrlLoaded(), "Current page is not Home page");
 
     }
     @Test(dataProvider = "getUserRegisterCredentials", groups = "Login", dependsOnMethods = "registerTest")

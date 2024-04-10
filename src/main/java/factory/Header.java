@@ -19,23 +19,36 @@ public class Header {
     private WebElement profilePageLink;
     @FindBy(xpath = "//i[@class='fas fa-sign-out-alt fa-lg']")
     private WebElement signOutLink;
+    @FindBy(id = "nav-link-new-post")
+    private WebElement newPostLink;
 
     public Header(WebDriver driver) {
         this.webDriver = driver;
         PageFactory.initElements(webDriver, this);
     }
+
     public void clickLogin() {
         WebDriverWait wait = new WebDriverWait(this.webDriver, Duration.ofSeconds(15));
         wait.until(ExpectedConditions.elementToBeClickable(loginLink));
-        loginLink.click(); }
+        loginLink.click();
+    }
+
     public void clickProfile() {
         WebDriverWait wait = new WebDriverWait(this.webDriver, Duration.ofSeconds(35));
         wait.until(ExpectedConditions.elementToBeClickable(profilePageLink));
         profilePageLink.click();
     }
+
     public void clickSignOut() {
         WebDriverWait wait = new WebDriverWait(this.webDriver, Duration.ofSeconds(15));
         wait.until(ExpectedConditions.elementToBeClickable(signOutLink));
         signOutLink.click();
     }
+
+    public void clickNewPost() {
+        WebDriverWait wait = new WebDriverWait(this.webDriver, Duration.ofSeconds(15));
+        wait.until(ExpectedConditions.elementToBeClickable(newPostLink));
+        newPostLink.click();
+    }
+
 }

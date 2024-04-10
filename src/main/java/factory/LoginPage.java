@@ -65,4 +65,8 @@ public class LoginPage {
         wait.until(ExpectedConditions.elementToBeClickable(registerButton));
         registerButton.click();
     }
+
+    public void navigateTo() {
+        this.webDriver.get(LOGIN_PAGE_URL);
+    }
 }

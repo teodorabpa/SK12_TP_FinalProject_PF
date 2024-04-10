@@ -4,16 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e509dbd0-1bd7-4351-a5b6-050f2ffbc074" name="Changes" comment="latest changes">
+    <list default="true" id="e509dbd0-1bd7-4351-a5b6-050f2ffbc074" name="Changes" comment="New test added + Read me">
+      <change afterPath="$PROJECT_DIR$/src/main/java/factory/PostPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Dowload_Upload_Testobject/PostTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/factory/Header.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/factory/Header.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/factory/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/factory/HomePage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/factory/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/factory/LoginPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/factory/ModifyProfilePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/factory/ModifyProfilePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/factory/ProfilePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/factory/ProfilePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/factory/RegisterPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/factory/RegisterPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/AutomatedWebTests/AllTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/AutomatedWebTests/AllTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Dowload_Upload_Testobject/DownloadTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Dowload_Upload_Testobject/DownloadTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/upload/costa-rica-8606850_640.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/upload/testUpload.jpg" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,6 +46,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
@@ -69,9 +70,11 @@
     "TestNG.AllTests.registerTestFail (1).executor": "Run",
     "TestNG.AllTests.registerTestFail.executor": "Run",
     "TestNG.C:/Users/btp/IdeaProjects/SK12_TP_FinalProject_PF/src/test/java/GroupedTests.xml.executor": "Run",
+    "TestNG.DownloadTest.testDownload.executor": "Run",
+    "TestNG.PostTests.testCreatePost.executor": "Run",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/btp/IdeaProjects/SK12_TP_FinalProject_PF",
+    "last_opened_file_path": "C:/Users/btp/IdeaProjects/02 Final lection repo/SK12_Automation-lecture-17/TestAutomationProjectN10",
     "onboarding.tips.debug.path": "C:/Users/btp/IdeaProjects/SK12_TP_FinalProject_PF/src/main/java/org/example/Main.java"
   }
 }]]></component>
@@ -81,43 +84,7 @@
       <recent name="C:\Users\btp\IdeaProjects\SK12_TP_FinalProject_PF\src\test\java" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.AllTests.registerTestFail (1)">
-    <configuration name="AllTests.editProfile" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="SK12_TP_FinalProject_PF" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="AutomatedWebTests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="AutomatedWebTests" />
-      <option name="MAIN_CLASS_NAME" value="AutomatedWebTests.AllTests" />
-      <option name="METHOD_NAME" value="editProfile" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="AllTests.logOutTest (1)" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="SK12_TP_FinalProject_PF" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="AutomatedWebTests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="AutomatedWebTests" />
-      <option name="MAIN_CLASS_NAME" value="AutomatedWebTests.AllTests" />
-      <option name="METHOD_NAME" value="logOutTest" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="TestNG.PostTests.testCreatePost">
     <configuration name="AllTests.registerTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="SK12_TP_FinalProject_PF" />
       <extension name="coverage">
@@ -172,13 +139,49 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="DownloadTest.testDownload" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="SK12_TP_FinalProject_PF" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Dowload_Upload_Testobject.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Dowload_Upload_Testobject" />
+      <option name="MAIN_CLASS_NAME" value="Dowload_Upload_Testobject.DownloadTest" />
+      <option name="METHOD_NAME" value="testDownload" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PostTests.testCreatePost" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="SK12_TP_FinalProject_PF" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Dowload_Upload_Testobject.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Dowload_Upload_Testobject" />
+      <option name="MAIN_CLASS_NAME" value="Dowload_Upload_Testobject.PostTests" />
+      <option name="METHOD_NAME" value="testCreatePost" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.PostTests.testCreatePost" />
+        <item itemvalue="TestNG.DownloadTest.testDownload" />
         <item itemvalue="TestNG.AllTests.registerTestFail (1)" />
         <item itemvalue="TestNG.AllTests.registerTestFail" />
         <item itemvalue="TestNG.AllTests.registerTest" />
-        <item itemvalue="TestNG.AllTests.editProfile" />
-        <item itemvalue="TestNG.AllTests.logOutTest (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -215,7 +218,15 @@
       <option name="project" value="LOCAL" />
       <updated>1712672225095</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="New test added + Read me">
+      <option name="closed" value="true" />
+      <created>1712741619904</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1712741619904</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -230,10 +241,12 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="First commit" />
     <MESSAGE value="Added Register Page in the Factory" />
     <MESSAGE value="latest changes" />
-    <option name="LAST_COMMIT_MESSAGE" value="latest changes" />
+    <MESSAGE value="New test added + Read me" />
+    <option name="LAST_COMMIT_MESSAGE" value="New test added + Read me" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -242,6 +255,11 @@
           <url>file://$PROJECT_DIR$/src/main/java/org/example/Main.java</url>
           <line>13</line>
           <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/Dowload_Upload_Testobject/PostTests.java</url>
+          <line>43</line>
+          <option name="timeStamp" value="41" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
