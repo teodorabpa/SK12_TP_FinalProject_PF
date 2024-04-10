@@ -14,7 +14,7 @@ public class ModifyProfilePage {
     private final WebDriver webDriver;
     private final WebDriverWait wait;
 
-    @FindBy(xpath = "//textarea[@class='form-control ng-valid ng-dirty ng-touched']")
+    @FindBy(xpath = "//textarea[@formcontrolname='publicInfo']")
     private WebElement publicInfoTextField;
 
     @FindBy(xpath = "//button[@class='btn btn-primary']")
@@ -23,11 +23,12 @@ public class ModifyProfilePage {
     public ModifyProfilePage(WebDriver driver) {
         this.webDriver = driver;
         this.wait = new WebDriverWait(this.webDriver, Duration.ofSeconds(20));
-        PageFactory.initElements(driver, this);
+        PageFactory.initElements(this.webDriver, this);
     }
 
     public void fillInPublicInfoTextField (String publicInfo) {
         wait.until(ExpectedConditions.visibilityOf(publicInfoTextField));
+        publicInfoTextField.clear();
         publicInfoTextField.sendKeys(publicInfo);
     }
 

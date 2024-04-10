@@ -20,6 +20,7 @@ import java.time.Duration;
 
 public class AllTests {
     ChromeDriver webDriver;
+
     @BeforeMethod(alwaysRun = true)
     public void beforeTest() {
         WebDriverManager.chromedriver().setup();
@@ -70,7 +71,7 @@ public class AllTests {
     }
 
     @Test(dataProvider = "getUserCredentials", groups = "Login")
-    public void loginUnsuccessfulTest(String username, String password){
+    public void loginUnsuccessfulTest(String username, String password, String userId){
         HomePage homePage = new HomePage (webDriver);
         Header header = new Header (webDriver);
         LoginPage loginPage = new LoginPage (webDriver);
@@ -96,19 +97,19 @@ public class AllTests {
         loginPage.fillInPassword(password);
         loginPage.clickSignIn();
         header.clickSignOut();
-        Assert.assertTrue(homePage.isUserLoaded(), "Homepage url is not loaded");
+        Assert.assertTrue(loginPage.isUrlLoaded(), "Login page url is not loaded");
 
     }
 
     @DataProvider(name="getUserRegisterCredentials")
     public Object[][] getUserRegisterCredentials() {
         return new Object[][]{
-                {"Ted3@P.com", "Ted3@P.com", "17", "09", "1984", "Ted3@P.com", "Ted3@P.com", "Loren ipsum sit amet dolor"},
+                {"Ted333@P.com", "Ted333@P.com", "Ted333@P.com", "Ted333@P.com"},
         };
     }
 
     @Test(dataProvider = "getUserRegisterCredentials", groups = "Login")
-    public void registerTest(String username, String email, String birthDay, String birthMonth, String birthYear, String password, String confirmPassword, String publicInfo) {
+    public void registerTest(String username, String email, String password, String confirmPassword) {
         HomePage homePage = new HomePage(webDriver);
         Header header = new Header(webDriver);
         LoginPage loginPage = new LoginPage(webDriver);
@@ -120,16 +121,14 @@ public class AllTests {
         Assert.assertTrue(registerPage.isUrlLoaded(), "Current page is not Register page");
         registerPage.fillInUserName(username);
         registerPage.fillInEmail(email);
-        registerPage.fillInDateOfBirth(birthDay, birthMonth, birthYear);
         registerPage.fillInPassword(password);
         registerPage.fillInConfirmPassword(confirmPassword);
-        registerPage.fillInPublicInfo(publicInfo);
         registerPage.clickSignIn();
         Assert.assertTrue(homePage.isUserLoaded(), "Current page is not Home page");
 
     }
     @Test(dataProvider = "getUserRegisterCredentials", groups = "Login", dependsOnMethods = "registerTest")
-    public void registerTestFail(String username, String email, String birthDay, String birthMonth, String birthYear, String password, String confirmPassword, String publicInfo) {
+        public void registerTestFail(String username, String email, String password, String confirmPassword) {
         HomePage homePage = new HomePage(webDriver);
         Header header = new Header(webDriver);
         LoginPage loginPage = new LoginPage(webDriver);
@@ -139,16 +138,13 @@ public class AllTests {
         homePage.navigateTo();
         header.clickLogin();
         loginPage.clickRegisterButton();
-        Assert.assertTrue(registerPage.isUrlLoaded(), "Current page is not Register page");
         registerPage.fillInUserName(username);
         registerPage.fillInEmail(email);
-        registerPage.fillInDateOfBirth(birthDay, birthMonth, birthYear);
         registerPage.fillInPassword(password);
         registerPage.fillInConfirmPassword(confirmPassword);
-        registerPage.fillInPublicInfo(publicInfo);
         registerPage.clickSignIn();
-        toastContainer.getAlertText();
-        Assert.assertEquals(toastContainer.getAlertText(), "Username taken");
+        String message = toastContainer.getAlertText();
+        Assert.assertEquals(message, "Username taken");
 
     }
 
@@ -175,7 +171,9 @@ public class AllTests {
         profilePage.clickEditProfileButton();
         modifyProfilePage.fillInPublicInfoTextField(publicInfo);
         modifyProfilePage.clickSave();
-
-    }
-
+        String detailedPublicInfo = profilePage.getPublicInfoText();
+        Assert.assertTrue(detailedPublicInfo.contains(publicInfo), "Public info is not correct.");
+        System.out.println(detailedPublicInfo);
+        System.out.println(publicInfo);
+        }
 }

@@ -12,7 +12,7 @@ import java.time.Duration;
 
 public class RegisterPage {
 
-    public static final String REGISTER_PAGE_URL = "http://training.skillo-bg.com:4300/users/register";
+    public static final String REGISTER_PAGE_URL = "http://training.skillo-bg.com:4200/users/register";
     private final WebDriver webDriver;
     private final WebDriverWait wait;
 
@@ -22,8 +22,8 @@ public class RegisterPage {
     @FindBy(xpath = "//input[@formcontrolname = 'email']")
     private WebElement emailTextField;
 
-    @FindBy(xpath = "//input[@formcontrolname = 'birthDate']")
-    private WebElement dateOfBirthField;
+    //@FindBy(xpath = "//input[@formcontrolname = 'birthDate']")
+    //private WebElement dateOfBirthField;
 
     @FindBy(id = "defaultRegisterFormPassword")
     private WebElement passwordTextField;
@@ -31,8 +31,8 @@ public class RegisterPage {
     @FindBy(id = "defaultRegisterPhonePassword")
     private WebElement confirmPasswordTextField;
 
-    @FindBy(xpath = "//textarea[@name='pulic-info']")
-    private WebElement publicInfoTextField;
+    //@FindBy(xpath = "//textarea[@name='pulic-info']")
+    //private WebElement publicInfoTextField;
 
     @FindBy(id = "sign-in-button")
     private WebElement signInButton;
@@ -56,7 +56,7 @@ public class RegisterPage {
         wait.until(ExpectedConditions.visibilityOf(emailTextField));
         emailTextField.sendKeys(email);
     }
-
+/*
     public void fillInDateOfBirth(String birthDay, String birthMonth, String birthYear) {
         wait.until(ExpectedConditions.visibilityOf(dateOfBirthField));
         dateOfBirthField.sendKeys(birthDay);
@@ -64,6 +64,8 @@ public class RegisterPage {
         dateOfBirthField.sendKeys(Keys.TAB);
         dateOfBirthField.sendKeys(birthYear);
     }
+
+ */
 
     public void fillInPassword(String password) {
         wait.until(ExpectedConditions.visibilityOf(passwordTextField));
@@ -75,10 +77,10 @@ public class RegisterPage {
         confirmPasswordTextField.sendKeys(confirmPassword);
     }
 
-    public void fillInPublicInfo(String publicInfo) {
-        wait.until(ExpectedConditions.visibilityOf(publicInfoTextField));
-        publicInfoTextField.sendKeys(publicInfo);
-    }
+    //public void fillInPublicInfo(String publicInfo) {
+    // wait.until(ExpectedConditions.visibilityOf(publicInfoTextField));
+    //    publicInfoTextField.sendKeys(publicInfo);
+    //}
 
     public void clickSignIn() {
         wait.until(ExpectedConditions.elementToBeClickable(signInButton));

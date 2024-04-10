@@ -4,9 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e509dbd0-1bd7-4351-a5b6-050f2ffbc074" name="Changes" comment="Added Register Page in the Factory">
+    <list default="true" id="e509dbd0-1bd7-4351-a5b6-050f2ffbc074" name="Changes" comment="latest changes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/factory/Header.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/factory/Header.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/factory/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/factory/HomePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/factory/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/factory/LoginPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/factory/ModifyProfilePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/factory/ModifyProfilePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/factory/ProfilePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/factory/ProfilePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/factory/RegisterPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/factory/RegisterPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/AutomatedWebTests/AllTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/AutomatedWebTests/AllTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,6 +29,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 5
@@ -39,16 +49,24 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "TestNG.AllTests.editProfile (1).executor": "Run",
-    "TestNG.AllTests.editProfile (2).executor": "Run",
+    "TestNG.AllTests.editProfile (1).executor": "Debug",
+    "TestNG.AllTests.editProfile (2).executor": "Debug",
     "TestNG.AllTests.editProfile (3).executor": "Run",
+    "TestNG.AllTests.editProfile (4).executor": "Run",
+    "TestNG.AllTests.editProfile (5).executor": "Debug",
     "TestNG.AllTests.editProfile.executor": "Run",
     "TestNG.AllTests.executor": "Run",
+    "TestNG.AllTests.homePageTest.executor": "Run",
+    "TestNG.AllTests.logOutTest (1).executor": "Run",
+    "TestNG.AllTests.logOutTest.executor": "Run",
+    "TestNG.AllTests.loginTest.executor": "Run",
+    "TestNG.AllTests.loginUnsuccessfulTest (1).executor": "Run",
+    "TestNG.AllTests.loginUnsuccessfulTest.executor": "Run",
     "TestNG.AllTests.registerTest (1).executor": "Run",
     "TestNG.AllTests.registerTest (2).executor": "Run",
     "TestNG.AllTests.registerTest (3).executor": "Run",
     "TestNG.AllTests.registerTest.executor": "Run",
-    "TestNG.AllTests.registerTestFail (1).executor": "Debug",
+    "TestNG.AllTests.registerTestFail (1).executor": "Run",
     "TestNG.AllTests.registerTestFail.executor": "Run",
     "TestNG.C:/Users/btp/IdeaProjects/SK12_TP_FinalProject_PF/src/test/java/GroupedTests.xml.executor": "Run",
     "git-widget-placeholder": "master",
@@ -63,61 +81,7 @@
       <recent name="C:\Users\btp\IdeaProjects\SK12_TP_FinalProject_PF\src\test\java" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.AllTests.editProfile">
-    <configuration name="AllTests.editProfile (1)" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="SK12_TP_FinalProject_PF" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="AutomatedWebTests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="AutomatedWebTests" />
-      <option name="MAIN_CLASS_NAME" value="AutomatedWebTests.AllTests" />
-      <option name="METHOD_NAME" value="editProfile" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="AllTests.editProfile (2)" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="SK12_TP_FinalProject_PF" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="AutomatedWebTests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="AutomatedWebTests" />
-      <option name="MAIN_CLASS_NAME" value="AutomatedWebTests.AllTests" />
-      <option name="METHOD_NAME" value="editProfile" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="AllTests.editProfile (3)" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="SK12_TP_FinalProject_PF" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="AutomatedWebTests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="AutomatedWebTests" />
-      <option name="MAIN_CLASS_NAME" value="AutomatedWebTests.AllTests" />
-      <option name="METHOD_NAME" value="editProfile" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="TestNG.AllTests.registerTestFail (1)">
     <configuration name="AllTests.editProfile" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="SK12_TP_FinalProject_PF" />
       <extension name="coverage">
@@ -136,7 +100,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AllTests.registerTest (2)" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="AllTests.logOutTest (1)" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="SK12_TP_FinalProject_PF" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="AutomatedWebTests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="AutomatedWebTests" />
+      <option name="MAIN_CLASS_NAME" value="AutomatedWebTests.AllTests" />
+      <option name="METHOD_NAME" value="logOutTest" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AllTests.registerTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="SK12_TP_FinalProject_PF" />
       <extension name="coverage">
         <pattern>
@@ -154,13 +136,49 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="AllTests.registerTestFail (1)" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="SK12_TP_FinalProject_PF" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="AutomatedWebTests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="AutomatedWebTests" />
+      <option name="MAIN_CLASS_NAME" value="AutomatedWebTests.AllTests" />
+      <option name="METHOD_NAME" value="registerTestFail" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AllTests.registerTestFail" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="SK12_TP_FinalProject_PF" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="AutomatedWebTests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="AutomatedWebTests" />
+      <option name="MAIN_CLASS_NAME" value="AutomatedWebTests.AllTests" />
+      <option name="METHOD_NAME" value="registerTestFail" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.AllTests.registerTestFail (1)" />
+        <item itemvalue="TestNG.AllTests.registerTestFail" />
+        <item itemvalue="TestNG.AllTests.registerTest" />
         <item itemvalue="TestNG.AllTests.editProfile" />
-        <item itemvalue="TestNG.AllTests.editProfile (3)" />
-        <item itemvalue="TestNG.AllTests.editProfile (2)" />
-        <item itemvalue="TestNG.AllTests.editProfile (1)" />
-        <item itemvalue="TestNG.AllTests.registerTest (2)" />
+        <item itemvalue="TestNG.AllTests.logOutTest (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -189,7 +207,15 @@
       <option name="project" value="LOCAL" />
       <updated>1712575906143</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="latest changes">
+      <option name="closed" value="true" />
+      <created>1712672225095</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1712672225095</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -206,7 +232,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="First commit" />
     <MESSAGE value="Added Register Page in the Factory" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added Register Page in the Factory" />
+    <MESSAGE value="latest changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="latest changes" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

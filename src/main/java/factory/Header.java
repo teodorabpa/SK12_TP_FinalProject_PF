@@ -12,10 +12,10 @@ import java.time.Duration;
 public class Header {
     private final WebDriver webDriver;
 
-    @FindBy(id="nav-link-login")
+    @FindBy(xpath = "//a[@id='nav-link-login']")
     private WebElement loginLink;
 
-    @FindBy(id="nav-link-profile")
+    @FindBy(xpath = "//a[@id='nav-link-profile']")
     private WebElement profilePageLink;
     @FindBy(xpath = "//i[@class='fas fa-sign-out-alt fa-lg']")
     private WebElement signOutLink;
