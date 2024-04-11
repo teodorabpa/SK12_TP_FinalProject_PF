@@ -32,6 +32,7 @@ public class PostTests extends TestObject{
         loginPage.fillInPassword(password);
         loginPage.checkRememberMe();
         Assert.assertTrue(loginPage.isCheckedRememberMe(), "Remember me checkbox is not checked.");
+        //Assert.assertTrue(false);
         loginPage.clickSignIn();
 
         header.clickProfile();
@@ -41,7 +42,13 @@ public class PostTests extends TestObject{
         Assert.assertTrue(postPage.isNewPostLoaded(), "The new post form is not loaded!");
 
         postPage.uploadPicture(postPicture);
-        System.out.printf("test");
+        String actualImageText = postPage.uploadedImageText();
+        Assert.assertTrue(postPage.isImageUploaded("testUpload.jpg"), "Image is not uploaded!");
+        Assert.assertEquals(actualImageText, "testUpload.jpg", "Incorrect image is uploaded!");
 
+        postPage.typePostCaption(caption);
+        postPage.clickCreatePost();
+
+        Assert.assertTrue(profilePage.isUrlLoaded(userId), "Current page in not profile page for " + userId + " user");
     }
 }

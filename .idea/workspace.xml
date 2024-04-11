@@ -4,16 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e509dbd0-1bd7-4351-a5b6-050f2ffbc074" name="Changes" comment="New test added + Read me">
-      <change afterPath="$PROJECT_DIR$/src/main/java/factory/PostPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Dowload_Upload_Testobject/PostTests.java" afterDir="false" />
+    <list default="true" id="e509dbd0-1bd7-4351-a5b6-050f2ffbc074" name="Changes" comment="New test added + Read me + Upload">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/factory/Header.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/factory/Header.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/factory/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/factory/HomePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/factory/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/factory/LoginPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/AutomatedWebTests/AllTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/AutomatedWebTests/AllTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Dowload_Upload_Testobject/DownloadTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Dowload_Upload_Testobject/DownloadTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/upload/costa-rica-8606850_640.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/upload/testUpload.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/factory/PostPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/factory/PostPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/factory/ProfilePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/factory/ProfilePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Dowload_Upload_Testobject/PostTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Dowload_Upload_Testobject/PostTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Dowload_Upload_Testobject/TestObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Dowload_Upload_Testobject/TestObject.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,7 +66,7 @@
     "TestNG.AllTests.registerTestFail (1).executor": "Run",
     "TestNG.AllTests.registerTestFail.executor": "Run",
     "TestNG.C:/Users/btp/IdeaProjects/SK12_TP_FinalProject_PF/src/test/java/GroupedTests.xml.executor": "Run",
-    "TestNG.DownloadTest.testDownload.executor": "Run",
+    "TestNG.DownloadTest.testDownload.executor": "Debug",
     "TestNG.PostTests.testCreatePost.executor": "Run",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
@@ -226,7 +222,15 @@
       <option name="project" value="LOCAL" />
       <updated>1712741619904</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="New test added + Read me + Upload">
+      <option name="closed" value="true" />
+      <created>1712759321155</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1712759321155</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -246,7 +250,8 @@
     <MESSAGE value="Added Register Page in the Factory" />
     <MESSAGE value="latest changes" />
     <MESSAGE value="New test added + Read me" />
-    <option name="LAST_COMMIT_MESSAGE" value="New test added + Read me" />
+    <MESSAGE value="New test added + Read me + Upload" />
+    <option name="LAST_COMMIT_MESSAGE" value="New test added + Read me + Upload" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -255,11 +260,6 @@
           <url>file://$PROJECT_DIR$/src/main/java/org/example/Main.java</url>
           <line>13</line>
           <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/Dowload_Upload_Testobject/PostTests.java</url>
-          <line>43</line>
-          <option name="timeStamp" value="41" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

@@ -16,11 +16,9 @@ public class ProfilePage {
 
     //@FindBy(xpath = "//i[@class='fas fa-user-edit ng-star-inserted']")
     @FindBy(xpath = "//i[contains(@class, 'fa-user-edit')]")
-
     private WebElement editProfileButton;
 
     @FindBy(xpath = "//p")
-
     private WebElement publicInfoText;
 
     public ProfilePage(WebDriver driver){
@@ -46,6 +44,8 @@ public class ProfilePage {
         WebDriverWait wait = new WebDriverWait(webDriver, Duration.ofSeconds(10));
         wait.until(ExpectedConditions.elementToBeClickable(publicInfoText));
         return publicInfoText.getText();
+
     }
+
 
 }
