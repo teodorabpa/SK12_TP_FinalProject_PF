@@ -5,11 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e509dbd0-1bd7-4351-a5b6-050f2ffbc074" name="Changes" comment="New test added + Read me + Upload">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/factory/PostPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/factory/PostPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/factory/ProfilePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/factory/ProfilePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Dowload_Upload_Testobject/PostTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Dowload_Upload_Testobject/PostTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/Dowload_Upload_Testobject/TestObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Dowload_Upload_Testobject/TestObject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/screenshots/testCreatePost.jpg" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,66 +39,66 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "TestNG.AllTests.editProfile (1).executor": "Debug",
-    "TestNG.AllTests.editProfile (2).executor": "Debug",
-    "TestNG.AllTests.editProfile (3).executor": "Run",
-    "TestNG.AllTests.editProfile (4).executor": "Run",
-    "TestNG.AllTests.editProfile (5).executor": "Debug",
-    "TestNG.AllTests.editProfile.executor": "Run",
-    "TestNG.AllTests.executor": "Run",
-    "TestNG.AllTests.homePageTest.executor": "Run",
-    "TestNG.AllTests.logOutTest (1).executor": "Run",
-    "TestNG.AllTests.logOutTest.executor": "Run",
-    "TestNG.AllTests.loginTest.executor": "Run",
-    "TestNG.AllTests.loginUnsuccessfulTest (1).executor": "Run",
-    "TestNG.AllTests.loginUnsuccessfulTest.executor": "Run",
-    "TestNG.AllTests.registerTest (1).executor": "Run",
-    "TestNG.AllTests.registerTest (2).executor": "Run",
-    "TestNG.AllTests.registerTest (3).executor": "Run",
-    "TestNG.AllTests.registerTest.executor": "Run",
-    "TestNG.AllTests.registerTestFail (1).executor": "Run",
-    "TestNG.AllTests.registerTestFail.executor": "Run",
-    "TestNG.C:/Users/btp/IdeaProjects/SK12_TP_FinalProject_PF/src/test/java/GroupedTests.xml.executor": "Run",
-    "TestNG.DownloadTest.testDownload.executor": "Debug",
-    "TestNG.PostTests.testCreatePost.executor": "Run",
-    "git-widget-placeholder": "master",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/btp/IdeaProjects/02 Final lection repo/SK12_Automation-lecture-17/TestAutomationProjectN10",
-    "onboarding.tips.debug.path": "C:/Users/btp/IdeaProjects/SK12_TP_FinalProject_PF/src/main/java/org/example/Main.java"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;Application.Header.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;TestNG.AllTests.editProfile (1).executor&quot;: &quot;Debug&quot;,
+    &quot;TestNG.AllTests.editProfile (2).executor&quot;: &quot;Debug&quot;,
+    &quot;TestNG.AllTests.editProfile (3).executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.AllTests.editProfile (4).executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.AllTests.editProfile (5).executor&quot;: &quot;Debug&quot;,
+    &quot;TestNG.AllTests.editProfile.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.AllTests.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.AllTests.homePageTest.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.AllTests.logOutTest (1).executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.AllTests.logOutTest.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.AllTests.loginTest.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.AllTests.loginUnsuccessfulTest (1).executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.AllTests.loginUnsuccessfulTest.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.AllTests.registerTest (1).executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.AllTests.registerTest (2).executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.AllTests.registerTest (3).executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.AllTests.registerTest.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.AllTests.registerTestFail (1).executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.AllTests.registerTestFail.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.C:/Users/btp/IdeaProjects/SK12_TP_FinalProject_PF/src/test/java/GroupedTests.xml.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.DownloadTest.testDownload.executor&quot;: &quot;Debug&quot;,
+    &quot;TestNG.PostTests.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.PostTests.testCreatePost.executor&quot;: &quot;Run&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/btp/IdeaProjects/SK12_TP_FinalProject_PF/src/test/resources/reports&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/btp/IdeaProjects/SK12_TP_FinalProject_PF/src/main/java/org/example/Main.java&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\btp\IdeaProjects\SK12_TP_FinalProject_PF\src\test\resources\reports" />
+      <recent name="C:\Users\btp\IdeaProjects\SK12_TP_FinalProject_PF\src\test\resources\download" />
+      <recent name="C:\Users\btp\IdeaProjects\SK12_TP_FinalProject_PF\src\test\resources\screenshots" />
       <recent name="C:\Users\btp\IdeaProjects\SK12_TP_FinalProject_PF\src\test\resources\upload" />
       <recent name="C:\Users\btp\IdeaProjects\SK12_TP_FinalProject_PF\src\test\java" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.PostTests.testCreatePost">
-    <configuration name="AllTests.registerTest" type="TestNG" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="TestNG.PostTests.testCreatePost (1)">
+    <configuration name="Header" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="factory.Header" />
       <module name="SK12_TP_FinalProject_PF" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="AutomatedWebTests.*" />
+          <option name="PATTERN" value="factory.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="AutomatedWebTests" />
-      <option name="MAIN_CLASS_NAME" value="AutomatedWebTests.AllTests" />
-      <option name="METHOD_NAME" value="registerTest" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AllTests.registerTestFail (1)" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="AllTests.loginUnsuccessfulTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="SK12_TP_FinalProject_PF" />
       <extension name="coverage">
         <pattern>
@@ -109,25 +108,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="AutomatedWebTests" />
       <option name="MAIN_CLASS_NAME" value="AutomatedWebTests.AllTests" />
-      <option name="METHOD_NAME" value="registerTestFail" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="AllTests.registerTestFail" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="SK12_TP_FinalProject_PF" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="AutomatedWebTests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="AutomatedWebTests" />
-      <option name="MAIN_CLASS_NAME" value="AutomatedWebTests.AllTests" />
-      <option name="METHOD_NAME" value="registerTestFail" />
+      <option name="METHOD_NAME" value="loginUnsuccessfulTest" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -153,7 +134,37 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PostTests.testCreatePost" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="PostTests" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="SK12_TP_FinalProject_PF" />
+      <shortenClasspath name="NONE" />
+      <useClassPathOnly />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Dowload_Upload_Testobject.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SUITE_NAME" value="" />
+      <option name="PACKAGE_NAME" value="Dowload_Upload_Testobject" />
+      <option name="MAIN_CLASS_NAME" value="Dowload_Upload_Testobject.PostTests" />
+      <option name="GROUP_NAME" value="" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="PARAMETERS" value="" />
+      <option name="OUTPUT_DIRECTORY" value="C:\Users\btp\IdeaProjects\SK12_TP_FinalProject_PF\src\test\resources\reports" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <option name="PROPERTIES_FILE" value="" />
+      <properties />
+      <listeners>
+        <listener class="org.testng.reporters.EmailableReporter" />
+        <listener class="org.testng.reporters.SuiteHTMLReporter" />
+      </listeners>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PostTests.testCreatePost (1)" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="SK12_TP_FinalProject_PF" />
       <extension name="coverage">
         <pattern>
@@ -171,13 +182,51 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="PostTests.testCreatePost" type="TestNG" nameIsGenerated="true">
+      <module name="SK12_TP_FinalProject_PF" />
+      <shortenClasspath name="NONE" />
+      <useClassPathOnly />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Dowload_Upload_Testobject.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SUITE_NAME" value="" />
+      <option name="PACKAGE_NAME" value="Dowload_Upload_Testobject" />
+      <option name="MAIN_CLASS_NAME" value="Dowload_Upload_Testobject.PostTests" />
+      <option name="METHOD_NAME" value="testCreatePost" />
+      <option name="GROUP_NAME" value="" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="PARAMETERS" value="" />
+      <option name="OUTPUT_DIRECTORY" value="C:\Users\btp\IdeaProjects\SK12_TP_FinalProject_PF\src\test\resources\reports" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <option name="PROPERTIES_FILE" value="" />
+      <properties />
+      <listeners>
+        <listener class="org.testng.reporters.EmailableReporter" />
+      </listeners>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.Header" />
+      <item itemvalue="TestNG.PostTests.testCreatePost" />
+      <item itemvalue="TestNG.AllTests.loginUnsuccessfulTest" />
+      <item itemvalue="TestNG.PostTests.testCreatePost (1)" />
+      <item itemvalue="TestNG.PostTests" />
+      <item itemvalue="TestNG.DownloadTest.testDownload" />
+    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.PostTests.testCreatePost" />
+        <item itemvalue="TestNG.PostTests.testCreatePost (1)" />
+        <item itemvalue="TestNG.AllTests.loginUnsuccessfulTest" />
+        <item itemvalue="TestNG.PostTests" />
+        <item itemvalue="Application.Header" />
         <item itemvalue="TestNG.DownloadTest.testDownload" />
-        <item itemvalue="TestNG.AllTests.registerTestFail (1)" />
-        <item itemvalue="TestNG.AllTests.registerTestFail" />
-        <item itemvalue="TestNG.AllTests.registerTest" />
       </list>
     </recent_temporary>
   </component>
@@ -230,7 +279,15 @@
       <option name="project" value="LOCAL" />
       <updated>1712759321155</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="New test added + Read me + Upload">
+      <option name="closed" value="true" />
+      <created>1712845845546</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1712845845546</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

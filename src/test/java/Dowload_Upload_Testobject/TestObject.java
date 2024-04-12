@@ -70,7 +70,7 @@ public class TestObject {
         chromeOptions.addArguments("disable-popup-blocking");
         return chromeOptions;
     }
-    private void cleanDirectory(String directoryPath) throws IOException{
+    private void cleanDirectory_(String directoryPath) throws IOException{
         File directory = new File(directoryPath);
         Assert.assertTrue(directory.isDirectory(), "Invalid directory!");
 
@@ -80,6 +80,39 @@ public class TestObject {
             System.out.printf("All files are deleted in Directory: %s%n", directoryPath);
         }else {
             System.out.printf("Unable to delete the files in Directory: %s%n", directoryPath);
+        }
+    }
+
+    private void cleanDirectory(String directoryPath) throws IOException {
+        File directory = new File(directoryPath);
+        Assert.assertTrue(directory.isDirectory(), "Invalid directory!");
+
+        // Get a list of all files in the directory
+        File[] files = directory.listFiles();
+
+        // Count the number of .gitignore files
+        int gitignoreCount = 0;
+
+        // Loop through each file in the directory
+        for (File file : files) {
+            if (file.getName().equals(".gitignore")) {
+                // Increment the count if the file is a .gitignore file
+                gitignoreCount++;
+            } else {
+                // Delete the file if it's not a .gitignore file
+                FileUtils.deleteQuietly(file);
+            }
+        }
+
+        // If there are more than one .gitignore file, keep only one
+        if (gitignoreCount > 1) {
+            // Keep the first .gitignore file and delete the rest
+            for (int i = 1; i < files.length; i++) {
+                if (files[i].getName().equals(".gitignore")) {
+                    FileUtils.deleteQuietly(files[i]);
+                    break;
+                }
+            }
         }
     }
     private void takeScreenshot(ITestResult testResult){
