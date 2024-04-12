@@ -104,7 +104,7 @@ public class AllTests {
     @DataProvider(name="getUserRegisterCredentials")
     public Object[][] getUserRegisterCredentials() {
         return new Object[][]{
-                {"Ted333@P.com", "Ted333@P.com", "Ted333@P.com", "Ted333@P.com"},
+                {"Ted333p@P.com", "Ted333p@P.com", "Ted333p@P.com", "Ted333p@P.com"},
         };
     }
 

@@ -5,10 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e509dbd0-1bd7-4351-a5b6-050f2ffbc074" name="Changes" comment="New test added + Read me + Upload">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Dowload_Upload_Testobject/TestObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Dowload_Upload_Testobject/TestObject.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/screenshots/testCreatePost.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/factory/Header.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/factory/Header.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/factory/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/factory/HomePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/factory/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/factory/LoginPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/factory/PostPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/factory/PostPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/factory/ProfilePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/factory/ProfilePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/AutomatedWebTests/AllTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/AutomatedWebTests/AllTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Dowload_Upload_Testobject/PostTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Dowload_Upload_Testobject/PostTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,42 +44,43 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;Application.Header.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;TestNG.AllTests.editProfile (1).executor&quot;: &quot;Debug&quot;,
-    &quot;TestNG.AllTests.editProfile (2).executor&quot;: &quot;Debug&quot;,
-    &quot;TestNG.AllTests.editProfile (3).executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.AllTests.editProfile (4).executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.AllTests.editProfile (5).executor&quot;: &quot;Debug&quot;,
-    &quot;TestNG.AllTests.editProfile.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.AllTests.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.AllTests.homePageTest.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.AllTests.logOutTest (1).executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.AllTests.logOutTest.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.AllTests.loginTest.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.AllTests.loginUnsuccessfulTest (1).executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.AllTests.loginUnsuccessfulTest.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.AllTests.registerTest (1).executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.AllTests.registerTest (2).executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.AllTests.registerTest (3).executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.AllTests.registerTest.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.AllTests.registerTestFail (1).executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.AllTests.registerTestFail.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.C:/Users/btp/IdeaProjects/SK12_TP_FinalProject_PF/src/test/java/GroupedTests.xml.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.DownloadTest.testDownload.executor&quot;: &quot;Debug&quot;,
-    &quot;TestNG.PostTests.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.PostTests.testCreatePost.executor&quot;: &quot;Run&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/btp/IdeaProjects/SK12_TP_FinalProject_PF/src/test/resources/reports&quot;,
-    &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/btp/IdeaProjects/SK12_TP_FinalProject_PF/src/main/java/org/example/Main.java&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "Application.Header.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "TestNG.AllTests.editProfile (1).executor": "Debug",
+    "TestNG.AllTests.editProfile (2).executor": "Debug",
+    "TestNG.AllTests.editProfile (3).executor": "Run",
+    "TestNG.AllTests.editProfile (4).executor": "Run",
+    "TestNG.AllTests.editProfile (5).executor": "Debug",
+    "TestNG.AllTests.editProfile.executor": "Run",
+    "TestNG.AllTests.executor": "Run",
+    "TestNG.AllTests.homePageTest.executor": "Run",
+    "TestNG.AllTests.logOutTest (1).executor": "Run",
+    "TestNG.AllTests.logOutTest.executor": "Run",
+    "TestNG.AllTests.loginTest.executor": "Run",
+    "TestNG.AllTests.loginUnsuccessfulTest (1).executor": "Run",
+    "TestNG.AllTests.loginUnsuccessfulTest.executor": "Run",
+    "TestNG.AllTests.registerTest (1).executor": "Run",
+    "TestNG.AllTests.registerTest (2).executor": "Run",
+    "TestNG.AllTests.registerTest (3).executor": "Run",
+    "TestNG.AllTests.registerTest.executor": "Run",
+    "TestNG.AllTests.registerTestFail (1).executor": "Run",
+    "TestNG.AllTests.registerTestFail.executor": "Run",
+    "TestNG.C:/Users/btp/IdeaProjects/SK12_TP_FinalProject_PF/src/test/java/GroupedTests.xml.executor": "Run",
+    "TestNG.DownloadTest.testDownload.executor": "Debug",
+    "TestNG.PostTests.executor": "Run",
+    "TestNG.PostTests.testCreatePost (1).executor": "Run",
+    "TestNG.PostTests.testCreatePost.executor": "Run",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/btp/IdeaProjects/SK12_TP_FinalProject_PF/src/test/resources/reports",
+    "onboarding.tips.debug.path": "C:/Users/btp/IdeaProjects/SK12_TP_FinalProject_PF/src/main/java/org/example/Main.java"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\btp\IdeaProjects\SK12_TP_FinalProject_PF\src\test\resources\reports" />
@@ -84,7 +90,7 @@
       <recent name="C:\Users\btp\IdeaProjects\SK12_TP_FinalProject_PF\src\test\java" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.PostTests.testCreatePost (1)">
+  <component name="RunManager" selected="TestNG.PostTests.testCreatePost">
     <configuration name="Header" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="factory.Header" />
       <module name="SK12_TP_FinalProject_PF" />
@@ -287,7 +293,23 @@
       <option name="project" value="LOCAL" />
       <updated>1712845845546</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="New test added + Read me + Upload">
+      <option name="closed" value="true" />
+      <created>1712910128003</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1712910128003</updated>
+    </task>
+    <task id="LOCAL-00008" summary="New test added + Read me + Upload">
+      <option name="closed" value="true" />
+      <created>1712910183687</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1712910183687</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -307,6 +329,7 @@
     <MESSAGE value="Added Register Page in the Factory" />
     <MESSAGE value="latest changes" />
     <MESSAGE value="New test added + Read me" />
+    <MESSAGE value="Final version + git ignore + read me" />
     <MESSAGE value="New test added + Read me + Upload" />
     <option name="LAST_COMMIT_MESSAGE" value="New test added + Read me + Upload" />
   </component>

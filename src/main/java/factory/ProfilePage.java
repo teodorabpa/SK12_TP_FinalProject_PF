@@ -24,7 +24,6 @@ public class ProfilePage {
     public ProfilePage(WebDriver driver){
 
         this.webDriver = driver;
-
         PageFactory.initElements(this.webDriver, this);
     }
     public boolean isUrlLoaded(String userId){

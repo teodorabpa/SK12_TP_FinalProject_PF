@@ -17,7 +17,7 @@ public class PostTests extends TestObject{
                 {"T@P.com3", "T@P.com3", "5626", postPicture, caption},
         };
     }
-    @Test(dataProvider = "getUserCredentials")
+    @Test(dataProvider = "getUserCredentials", groups = "Login")
     public void testCreatePost(String username, String password, String userId, File postPicture, String caption){
         WebDriver webDriver = super.getWebDriver();
         Header header = new Header(webDriver);
