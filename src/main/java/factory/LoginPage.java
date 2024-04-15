@@ -35,21 +35,17 @@ public class LoginPage {
         PageFactory.initElements(driver, this);
     }
     public boolean isUrlLoaded(){
-        //WebDriverWait wait = new WebDriverWait(this.webDriver, Duration.ofSeconds(15));
         return wait.until(ExpectedConditions.urlToBe(LOGIN_PAGE_URL));
     }
     public void fillInUserName(String username){
-        //WebDriverWait wait = new WebDriverWait(this.webDriver, Duration.ofSeconds(15));
         wait.until(ExpectedConditions.visibilityOf(usernameTextField));
         usernameTextField.sendKeys(username);
     }
     public void fillInPassword(String password){
-        //WebDriverWait wait = new WebDriverWait(this.webDriver, Duration.ofSeconds(15));
         wait.until(ExpectedConditions.visibilityOf(passwordTextField));
         passwordTextField.sendKeys(password);
     }
     public void checkRememberMe(){
-        //WebDriverWait wait = new WebDriverWait(this.webDriver, Duration.ofSeconds(15));
         wait.until(ExpectedConditions.elementToBeClickable(rememberMeCheckbox));
         rememberMeCheckbox.click();
     }
@@ -58,12 +54,10 @@ public class LoginPage {
     }
 
     public void clickSignIn(){
-        //WebDriverWait wait = new WebDriverWait(this.webDriver, Duration.ofSeconds(15));
         wait.until(ExpectedConditions.elementToBeClickable(signInButton));
         signInButton.click();
     }
     public void clickRegisterButton(){
-        //WebDriverWait wait = new WebDriverWait(this.webDriver, Duration.ofSeconds(15));
         wait.until(ExpectedConditions.elementToBeClickable(registerButton));
         registerButton.click();
     }

@@ -30,26 +30,22 @@ public class Header {
     }
 
     public void clickLogin() {
-        //WebDriverWait wait = new WebDriverWait(this.webDriver, Duration.ofSeconds(15));
         wait.until(ExpectedConditions.elementToBeClickable(loginLink));
         loginLink.click();
     }
 
     public void clickProfile() {
-        //WebDriverWait wait = new WebDriverWait(this.webDriver, Duration.ofSeconds(35));
         wait = (WebDriverWait) wait.withTimeout(Duration.ofSeconds(35));
         wait.until(ExpectedConditions.elementToBeClickable(profilePageLink));
         profilePageLink.click();
     }
 
     public void clickSignOut() {
-        //WebDriverWait wait = new WebDriverWait(this.webDriver, Duration.ofSeconds(15));
         wait.until(ExpectedConditions.elementToBeClickable(signOutLink));
         signOutLink.click();
     }
 
     public void clickNewPost() {
-        //WebDriverWait wait = new WebDriverWait(this.webDriver, Duration.ofSeconds(15));
         wait.until(ExpectedConditions.elementToBeClickable(newPostLink));
         newPostLink.click();
     }

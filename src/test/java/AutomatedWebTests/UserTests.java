@@ -2,36 +2,19 @@ package AutomatedWebTests;
 
 import factory.*;
 import io.github.bonigarcia.wdm.WebDriverManager;
-import org.apache.commons.logging.Log;
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.interactions.Actions;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
-import java.time.Duration;
+import java.util.Random;
 
-public class AllTests {
-    ChromeDriver webDriver;
+public class UserTests extends TestObject {
 
-    @BeforeMethod(alwaysRun = true)
-    public void beforeTest() {
-        WebDriverManager.chromedriver().setup();
-        webDriver = new ChromeDriver();
-        webDriver.manage().window().maximize();
-    }
-
-    @AfterMethod(alwaysRun = true)
-    public void afterTest() {
-        webDriver.close();
-    }
+    private String credential;
 
     @DataProvider(name="getUserCredentials")
     public Object[][] getUserCredentials() {
@@ -40,16 +23,17 @@ public class AllTests {
         };
     }
 
-    @Test(groups = "Login")
+    @Test
     public void homePageTest() {
+        WebDriver webDriver = super.getWebDriver();
         HomePage homePage = new HomePage(webDriver);
-
         homePage.navigateTo();
         Assert.assertTrue(homePage.isUrlLoaded(), "Homepage url is not loaded");
     }
 
     @Test(dataProvider = "getUserCredentials", groups = "Login")
     public void loginTest(String username, String password, String userId) {
+        WebDriver webDriver = super.getWebDriver();
         HomePage homePage = new HomePage(webDriver);
         Header header = new Header(webDriver);
         LoginPage loginPage = new LoginPage(webDriver);
@@ -72,6 +56,7 @@ public class AllTests {
 
     @Test(dataProvider = "getUserCredentials", groups = "Login")
     public void loginUnsuccessfulTest(String username, String password, String userId){
+        WebDriver webDriver = super.getWebDriver();
         HomePage homePage = new HomePage (webDriver);
         Header header = new Header (webDriver);
         LoginPage loginPage = new LoginPage (webDriver);
@@ -87,6 +72,7 @@ public class AllTests {
 
     @Test(dataProvider = "getUserCredentials", groups = "Login")
     public void logOutTest(String username, String password, String userId) {
+        WebDriver webDriver = super.getWebDriver();
         HomePage homePage = new HomePage(webDriver);
         Header header = new Header (webDriver);
         LoginPage loginPage = new LoginPage(webDriver);
@@ -103,13 +89,15 @@ public class AllTests {
 
     @DataProvider(name="getUserRegisterCredentials")
     public Object[][] getUserRegisterCredentials() {
+        credential = generateUniqueCredential();
         return new Object[][]{
-                {"Ted333p@P.com", "Ted333p@P.com", "Ted333p@P.com", "Ted333p@P.com"},
+                {credential, credential, credential, credential},
         };
     }
 
     @Test(dataProvider = "getUserRegisterCredentials", groups = "Login")
     public void registerTest(String username, String email, String password, String confirmPassword) {
+        WebDriver webDriver = super.getWebDriver();
         HomePage homePage = new HomePage(webDriver);
         Header header = new Header(webDriver);
         LoginPage loginPage = new LoginPage(webDriver);
@@ -127,8 +115,9 @@ public class AllTests {
         Assert.assertTrue(homePage.isUrlLoaded(), "Current page is not Home page");
 
     }
-    @Test(dataProvider = "getUserRegisterCredentials", groups = "Login", dependsOnMethods = "registerTest")
-        public void registerTestFail(String username, String email, String password, String confirmPassword) {
+    @Test(groups = "Login", dependsOnMethods = "registerTest")
+        public void registerTestFail() {
+        WebDriver webDriver = super.getWebDriver();
         HomePage homePage = new HomePage(webDriver);
         Header header = new Header(webDriver);
         LoginPage loginPage = new LoginPage(webDriver);
@@ -138,10 +127,10 @@ public class AllTests {
         homePage.navigateTo();
         header.clickLogin();
         loginPage.clickRegisterButton();
-        registerPage.fillInUserName(username);
-        registerPage.fillInEmail(email);
-        registerPage.fillInPassword(password);
-        registerPage.fillInConfirmPassword(confirmPassword);
+        registerPage.fillInUserName(credential);
+        registerPage.fillInEmail(credential);
+        registerPage.fillInPassword(credential);
+        registerPage.fillInConfirmPassword(credential);
         registerPage.clickSignIn();
         String message = toastContainer.getAlertText();
         Assert.assertEquals(message, "Username taken");
@@ -156,6 +145,7 @@ public class AllTests {
     }
     @Test(dataProvider = "getEditUserCredentials", groups = "Login")
     public void editProfile(String username, String password, String publicInfo) {
+        WebDriver webDriver = super.getWebDriver();
         HomePage homePage = new HomePage(webDriver);
         Header header = new Header(webDriver);
         LoginPage loginPage = new LoginPage(webDriver);
@@ -176,4 +166,9 @@ public class AllTests {
         System.out.println(detailedPublicInfo);
         System.out.println(publicInfo);
         }
+    private String generateUniqueCredential() {
+        String baseString = "T@P.com";
+        Random random = new Random();
+        return baseString + random.nextInt(10000);
+    }
 }

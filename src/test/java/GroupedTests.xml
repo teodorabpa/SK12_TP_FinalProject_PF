@@ -5,11 +5,12 @@
         <groups>
             <run>
                 <include name="Login" />
+                <!--<include name -->
             </run>
         </groups>
 
         <classes>
-            <class name="AutomatedWebTests.AllTests"/>
+            <class name="AutomatedWebTests.UserTests"/>
         </classes>
     </test> <!-- Test -->
 </suite> <!-- Suite -->

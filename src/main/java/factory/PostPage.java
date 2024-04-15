@@ -18,6 +18,9 @@ public class PostPage {
 
     @FindBy(xpath = "//h3[text()='Post a picture to share with your awesome followers']")
     private WebElement newPostTitle;
+
+    @FindBy(xpath = "//*[@class='uploadfilecontainer']")
+    private WebElement newPostForm;
     @FindBy(xpath = "//input[@class='form-control input-lg'][@type='text']")
     private WebElement uploadPictureText;
     @FindBy(name="caption")
@@ -25,19 +28,22 @@ public class PostPage {
     @FindBy(id="create-post")
     private WebElement createPostButton;
 
+    @FindBy(xpath = "//*[@class='form-group']/input[@type='file']")
+    private WebElement uploadFile;
+
+
     public PostPage(WebDriver driver){
         this.webDriver = driver;
         this.wait = new WebDriverWait(this.webDriver, Duration.ofSeconds(15));
         PageFactory.initElements(webDriver, this);
     }
-    public boolean isNewPostLoaded() {
-        //WebDriverWait wait = new WebDriverWait(this.webDriver, Duration.ofSeconds(15));
-        wait.until(ExpectedConditions.visibilityOf(newPostTitle));
-        return newPostTitle.isDisplayed();
+
+    public boolean isNewPostFormLoaded() {
+        wait.until(ExpectedConditions.visibilityOf(newPostForm));
+        return newPostForm.isDisplayed();
     }
 
     public void uploadPicture(File file){
-        WebElement uploadFile = webDriver.findElement(By.xpath("//*[@class='form-group']/input[@type='file']"));
         uploadFile.sendKeys(file.getAbsolutePath());
     }
     public boolean isImageUploaded(String fileName) {

@@ -22,17 +22,11 @@ public class RegisterPage {
     @FindBy(xpath = "//input[@formcontrolname = 'email']")
     private WebElement emailTextField;
 
-    //@FindBy(xpath = "//input[@formcontrolname = 'birthDate']")
-    //private WebElement dateOfBirthField;
-
     @FindBy(id = "defaultRegisterFormPassword")
     private WebElement passwordTextField;
 
     @FindBy(id = "defaultRegisterPhonePassword")
     private WebElement confirmPasswordTextField;
-
-    //@FindBy(xpath = "//textarea[@name='pulic-info']")
-    //private WebElement publicInfoTextField;
 
     @FindBy(id = "sign-in-button")
     private WebElement signInButton;
@@ -56,16 +50,6 @@ public class RegisterPage {
         wait.until(ExpectedConditions.visibilityOf(emailTextField));
         emailTextField.sendKeys(email);
     }
-/*
-    public void fillInDateOfBirth(String birthDay, String birthMonth, String birthYear) {
-        wait.until(ExpectedConditions.visibilityOf(dateOfBirthField));
-        dateOfBirthField.sendKeys(birthDay);
-        dateOfBirthField.sendKeys(birthMonth);
-        dateOfBirthField.sendKeys(Keys.TAB);
-        dateOfBirthField.sendKeys(birthYear);
-    }
-
- */
 
     public void fillInPassword(String password) {
         wait.until(ExpectedConditions.visibilityOf(passwordTextField));
@@ -76,11 +60,6 @@ public class RegisterPage {
         wait.until(ExpectedConditions.visibilityOf(confirmPasswordTextField));
         confirmPasswordTextField.sendKeys(confirmPassword);
     }
-
-    //public void fillInPublicInfo(String publicInfo) {
-    // wait.until(ExpectedConditions.visibilityOf(publicInfoTextField));
-    //    publicInfoTextField.sendKeys(publicInfo);
-    //}
 
     public void clickSignIn() {
         wait.until(ExpectedConditions.elementToBeClickable(signInButton));

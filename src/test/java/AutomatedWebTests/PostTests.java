@@ -1,4 +1,4 @@
-package Dowload_Upload_Testobject;
+package AutomatedWebTests;
 
 import factory.*;
 import org.openqa.selenium.WebDriver;
@@ -8,7 +8,7 @@ import org.testng.annotations.Test;
 
 import java.io.File;
 
-public class PostTests extends TestObject{
+public class PostTests extends TestObject {
     @DataProvider(name="getUserCredentials")
     public Object[][] getUserCredentials() {
             File postPicture = new File("src\\test\\resources\\upload\\testUpload.jpg");
@@ -32,14 +32,13 @@ public class PostTests extends TestObject{
         loginPage.fillInPassword(password);
         loginPage.checkRememberMe();
         Assert.assertTrue(loginPage.isCheckedRememberMe(), "Remember me checkbox is not checked.");
-        //Assert.assertTrue(false);
         loginPage.clickSignIn();
 
         header.clickProfile();
         Assert.assertTrue(profilePage.isUrlLoaded(userId), "Current page in not profile page for " + userId + " user");
 
         header.clickNewPost();
-        Assert.assertTrue(postPage.isNewPostLoaded(), "The new post form is not loaded!");
+        Assert.assertTrue(postPage.isNewPostFormLoaded(), "The new post form is not loaded");
 
         postPage.uploadPicture(postPicture);
         String actualImageText = postPage.uploadedImageText();
