@@ -30,10 +30,13 @@ public class TestObject {
     public static final String TEST_RESOURCES_DIR = "src\\test\\resources\\";
     public static final String DOWNLOAD_DIR = TEST_RESOURCES_DIR.concat("download\\");
     public static final String SCREENSHOTS_DIR = TEST_RESOURCES_DIR.concat("screenshots\\");
+    public static final String REPORTS_DIR = TEST_RESOURCES_DIR.concat("reports\\");
+
     private WebDriver webDriver;
     @BeforeSuite
     protected final void setupTestSuite() throws IOException{
         cleanDirectory(SCREENSHOTS_DIR);
+        cleanDirectory(REPORTS_DIR);
         WebDriverManager.chromedriver().setup();
     }
     @BeforeMethod

@@ -2,15 +2,10 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="PF Suite">
     <test name="PF Tests">
-        <groups>
-            <run>
-                <include name="Login" />
-                <!--<include name -->
-            </run>
-        </groups>
 
         <classes>
             <class name="AutomatedWebTests.UserTests"/>
+            <class name="AutomatedWebTests.PostTests"/>
         </classes>
-    </test> <!-- Test -->
-</suite> <!-- Suite -->
+    </test>
+</suite>

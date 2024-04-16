@@ -1,0 +1,29 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="AutomatedWebTests" type="TestNG" nameIsGenerated="true">
+    <module name="SK12_TP_FinalProject_PF" />
+    <shortenClasspath name="NONE" />
+    <useClassPathOnly />
+    <extension name="coverage">
+      <pattern>
+        <option name="PATTERN" value="AutomatedWebTests.*" />
+        <option name="ENABLED" value="true" />
+      </pattern>
+    </extension>
+    <option name="SUITE_NAME" value="" />
+    <option name="PACKAGE_NAME" value="AutomatedWebTests" />
+    <option name="MAIN_CLASS_NAME" value="" />
+    <option name="METHOD_NAME" value="" />
+    <option name="GROUP_NAME" value="" />
+    <option name="TEST_OBJECT" value="PACKAGE" />
+    <option name="PARAMETERS" value="" />
+    <option name="OUTPUT_DIRECTORY" value="src\test\resources\reports" />
+    <option name="PROPERTIES_FILE" value="" />
+    <properties />
+    <listeners>
+      <listener class="org.testng.reporters.EmailableReporter" />
+    </listeners>
+    <method v="2">
+      <option name="Make" enabled="true" />
+    </method>
+  </configuration>
+</component>

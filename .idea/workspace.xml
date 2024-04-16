@@ -6,8 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="e509dbd0-1bd7-4351-a5b6-050f2ffbc074" name="Changes" comment="adding file to reports to upload it to repo">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/AutomatedWebTests/TestObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/AutomatedWebTests/TestObject.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/screenshots/text.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/GroupedTests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/GroupedTests.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,51 +39,54 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "Application.Header.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "TestNG.AllTests.editProfile (1).executor": "Debug",
-    "TestNG.AllTests.editProfile (2).executor": "Debug",
-    "TestNG.AllTests.editProfile (3).executor": "Run",
-    "TestNG.AllTests.editProfile (4).executor": "Run",
-    "TestNG.AllTests.editProfile (5).executor": "Debug",
-    "TestNG.AllTests.editProfile.executor": "Run",
-    "TestNG.AllTests.executor": "Run",
-    "TestNG.AllTests.homePageTest.executor": "Run",
-    "TestNG.AllTests.logOutTest (1).executor": "Run",
-    "TestNG.AllTests.logOutTest.executor": "Run",
-    "TestNG.AllTests.loginTest.executor": "Run",
-    "TestNG.AllTests.loginUnsuccessfulTest (1).executor": "Run",
-    "TestNG.AllTests.loginUnsuccessfulTest.executor": "Run",
-    "TestNG.AllTests.registerTest (1).executor": "Run",
-    "TestNG.AllTests.registerTest (2).executor": "Run",
-    "TestNG.AllTests.registerTest (3).executor": "Run",
-    "TestNG.AllTests.registerTest.executor": "Run",
-    "TestNG.AllTests.registerTestFail (1).executor": "Run",
-    "TestNG.AllTests.registerTestFail.executor": "Run",
-    "TestNG.AutomatedWebTests.executor": "Run",
-    "TestNG.C:/Users/btp/IdeaProjects/SK12_TP_FinalProject_PF/src/test/java/GroupedTests.xml.executor": "Run",
-    "TestNG.DownloadTest.executor": "Run",
-    "TestNG.DownloadTest.testDownload.executor": "Debug",
-    "TestNG.PostTests.executor": "Run",
-    "TestNG.PostTests.testCreatePost (1).executor": "Run",
-    "TestNG.PostTests.testCreatePost.executor": "Run",
-    "TestNG.UserTests.editProfile (1).executor": "Debug",
-    "TestNG.UserTests.editProfile.executor": "Debug",
-    "TestNG.UserTests.registerTestFail (1).executor": "Debug",
-    "TestNG.UserTests.registerTestFail (2).executor": "Debug",
-    "TestNG.UserTests.registerTestFail (3).executor": "Run",
-    "TestNG.UserTests.registerTestFail.executor": "Debug",
-    "git-widget-placeholder": "master",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/btp/IdeaProjects/SK12_TP_FinalProject_PF",
-    "onboarding.tips.debug.path": "C:/Users/btp/IdeaProjects/SK12_TP_FinalProject_PF/src/main/java/org/example/Main.java"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;Application.Header.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;TestNG.AllTests.editProfile (1).executor&quot;: &quot;Debug&quot;,
+    &quot;TestNG.AllTests.editProfile (2).executor&quot;: &quot;Debug&quot;,
+    &quot;TestNG.AllTests.editProfile (3).executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.AllTests.editProfile (4).executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.AllTests.editProfile (5).executor&quot;: &quot;Debug&quot;,
+    &quot;TestNG.AllTests.editProfile.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.AllTests.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.AllTests.homePageTest.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.AllTests.logOutTest (1).executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.AllTests.logOutTest.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.AllTests.loginTest.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.AllTests.loginUnsuccessfulTest (1).executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.AllTests.loginUnsuccessfulTest.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.AllTests.registerTest (1).executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.AllTests.registerTest (2).executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.AllTests.registerTest (3).executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.AllTests.registerTest.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.AllTests.registerTestFail (1).executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.AllTests.registerTestFail.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.AutomatedWebTests.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.C:/Users/Teodora.Pencheva/Documents/GitHub/Final_project/src/test/java/GroupedTests.xml.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.C:/Users/btp/IdeaProjects/SK12_TP_FinalProject_PF/src/test/java/GroupedTests.xml.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.DownloadTest.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.DownloadTest.testDownload.executor&quot;: &quot;Debug&quot;,
+    &quot;TestNG.PostTests.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.PostTests.testCreatePost (1).executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.PostTests.testCreatePost.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.UserTests.editProfile (1).executor&quot;: &quot;Debug&quot;,
+    &quot;TestNG.UserTests.editProfile.executor&quot;: &quot;Debug&quot;,
+    &quot;TestNG.UserTests.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.UserTests.registerTestFail (1).executor&quot;: &quot;Debug&quot;,
+    &quot;TestNG.UserTests.registerTestFail (2).executor&quot;: &quot;Debug&quot;,
+    &quot;TestNG.UserTests.registerTestFail (3).executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.UserTests.registerTestFail.executor&quot;: &quot;Debug&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Teodora.Pencheva/Documents/GitHub/Final_project&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/btp/IdeaProjects/SK12_TP_FinalProject_PF/src/main/java/org/example/Main.java&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\btp\IdeaProjects\SK12_TP_FinalProject_PF\src\test\java" />
@@ -92,113 +96,12 @@
       <recent name="C:\Users\btp\IdeaProjects\SK12_TP_FinalProject_PF\src\test\resources\download" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.AutomatedWebTests">
-    <configuration name="AutomatedWebTests" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="SK12_TP_FinalProject_PF" />
-      <shortenClasspath name="NONE" />
-      <useClassPathOnly />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="AutomatedWebTests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="SUITE_NAME" value="" />
-      <option name="PACKAGE_NAME" value="AutomatedWebTests" />
-      <option name="MAIN_CLASS_NAME" value="" />
-      <option name="METHOD_NAME" value="" />
-      <option name="GROUP_NAME" value="" />
-      <option name="TEST_OBJECT" value="PACKAGE" />
-      <option name="PARAMETERS" value="" />
-      <option name="OUTPUT_DIRECTORY" value="\src\test\resources\reports" />
-      <option name="PROPERTIES_FILE" value="" />
-      <properties />
-      <listeners>
-        <listener class="org.testng.reporters.EmailableReporter" />
-      </listeners>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="PostTests.testCreatePost" type="TestNG" nameIsGenerated="true">
-      <module name="SK12_TP_FinalProject_PF" />
-      <shortenClasspath name="NONE" />
-      <useClassPathOnly />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="AutomatedWebTests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="SUITE_NAME" value="" />
-      <option name="PACKAGE_NAME" value="AutomatedWebTests" />
-      <option name="MAIN_CLASS_NAME" value="AutomatedWebTests.PostTests" />
-      <option name="METHOD_NAME" value="testCreatePost" />
-      <option name="GROUP_NAME" value="" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <option name="PARAMETERS" value="" />
-      <option name="OUTPUT_DIRECTORY" value="\src\test\resources\reports" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <option name="PROPERTIES_FILE" value="" />
-      <properties />
-      <listeners>
-        <listener class="org.testng.reporters.EmailableReporter" />
-      </listeners>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="UserTests.editProfile (1)" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="SK12_TP_FinalProject_PF" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="AutomatedWebTests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="AutomatedWebTests" />
-      <option name="MAIN_CLASS_NAME" value="AutomatedWebTests.UserTests" />
-      <option name="METHOD_NAME" value="editProfile" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="UserTests.editProfile" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="SK12_TP_FinalProject_PF" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="AutomatedWebTests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="AutomatedWebTests" />
-      <option name="MAIN_CLASS_NAME" value="AutomatedWebTests.UserTests" />
-      <option name="METHOD_NAME" value="editProfile" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <list>
-      <item itemvalue="TestNG.PostTests.testCreatePost" />
-      <item itemvalue="TestNG.UserTests.editProfile" />
-      <item itemvalue="TestNG.UserTests.editProfile (1)" />
-      <item itemvalue="TestNG.AutomatedWebTests" />
-    </list>
-    <recent_temporary>
-      <list>
-        <item itemvalue="TestNG.AutomatedWebTests" />
-        <item itemvalue="TestNG.UserTests.editProfile (1)" />
-        <item itemvalue="TestNG.UserTests.editProfile" />
-      </list>
-    </recent_temporary>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="jdk-21.0.2-openjdk-21.0.2-4caba194b151-4f524021" />
+      </set>
+    </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
