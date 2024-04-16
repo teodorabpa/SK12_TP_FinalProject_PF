@@ -46,10 +46,7 @@ public class TestObject {
         takeScreenshot(testResult);
         quitDriver();
     }
-       @AfterSuite
-    public void deleteDownloadFiles() throws IOException {
-        cleanDirectory(DOWNLOAD_DIR);
-    }
+
     private void quitDriver() {
         if (this.webDriver != null){
             this.webDriver.quit();
