@@ -3,9 +3,6 @@ target/
 !**/src/main/**/target/
 !**/src/test/**/target/
 
-src/test/resources/download
-src/test/resources/reports
-src/test/resources/screenshots
 
 ### IntelliJ IDEA ###
 .idea/modules.xml
