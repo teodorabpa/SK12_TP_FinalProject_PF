@@ -4,11 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e509dbd0-1bd7-4351-a5b6-050f2ffbc074" name="Changes" comment="adding file to reports to upload it to repo">
+    <list default="true" id="e509dbd0-1bd7-4351-a5b6-050f2ffbc074" name="Changes" comment="reports refactored">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/AutomatedWebTests/TestObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/AutomatedWebTests/TestObject.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/GroupedTests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/GroupedTests.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -200,7 +197,15 @@
       <option name="project" value="LOCAL" />
       <updated>1713252236140</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="reports refactored">
+      <option name="closed" value="true" />
+      <created>1713285621961</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1713285621961</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -225,7 +230,8 @@
     <MESSAGE value="Final changes before review" />
     <MESSAGE value="adding file to screenshots   to upload it to repo" />
     <MESSAGE value="adding file to reports to upload it to repo" />
-    <option name="LAST_COMMIT_MESSAGE" value="adding file to reports to upload it to repo" />
+    <MESSAGE value="reports refactored" />
+    <option name="LAST_COMMIT_MESSAGE" value="reports refactored" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
