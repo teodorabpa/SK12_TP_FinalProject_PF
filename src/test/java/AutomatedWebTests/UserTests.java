@@ -1,12 +1,8 @@
 package AutomatedWebTests;
 
 import factory.*;
-import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
@@ -27,12 +23,16 @@ public class UserTests extends TestObject {
     public void homePageTest() {
         WebDriver webDriver = super.getWebDriver();
         HomePage homePage = new HomePage(webDriver);
+        Header header = new Header(webDriver);
+
         homePage.navigateTo();
         Assert.assertTrue(homePage.isUrlLoaded(), "Homepage url is not loaded");
+        Assert.assertTrue(header.isHomeLinkDisplayed(), "'Home' link is not visible in header");
+        Assert.assertTrue(header.isLoginLinkDisplayed(), "'Login' link is not visible in header");
     }
 
     @Test(dataProvider = "getUserCredentials", groups = "Login")
-    public void loginTest(String username, String password, String userId) {
+    public void successfulLoginTest(String username, String password, String userId) {
         WebDriver webDriver = super.getWebDriver();
         HomePage homePage = new HomePage(webDriver);
         Header header = new Header(webDriver);
@@ -149,6 +149,7 @@ public class UserTests extends TestObject {
         Header header = new Header(webDriver);
         LoginPage loginPage = new LoginPage(webDriver);
         RegisterPage registerPage = new RegisterPage(webDriver);
+        ToastContainer toastContainer = new ToastContainer(webDriver);
 
         homePage.navigateTo();
         header.clickLogin();
@@ -160,6 +161,8 @@ public class UserTests extends TestObject {
         registerPage.fillInConfirmPassword(confirmPassword);
         registerPage.clickSignIn();
         Assert.assertTrue(homePage.isUrlLoaded(), "Current page is not Home page");
+        String message = toastContainer.getAlertText();
+        Assert.assertEquals(message, "Successful register!");
 
     }
     @Test(groups = "Login", dependsOnMethods = "registerTest")

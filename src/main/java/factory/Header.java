@@ -16,6 +16,9 @@ public class Header {
     @FindBy(xpath = "//a[@id='nav-link-login']")
     private WebElement loginLink;
 
+    @FindBy(id = "nav-link-home")
+    private WebElement homeLink;
+
     @FindBy(xpath = "//a[@id='nav-link-profile']")
     private WebElement profilePageLink;
     @FindBy(xpath = "//i[@class='fas fa-sign-out-alt fa-lg']")
@@ -48,6 +51,16 @@ public class Header {
     public void clickNewPost() {
         wait.until(ExpectedConditions.elementToBeClickable(newPostLink));
         newPostLink.click();
+    }
+
+    public boolean isHomeLinkDisplayed() {
+        wait.until(ExpectedConditions.visibilityOf(homeLink));
+        return homeLink.isDisplayed();
+    }
+
+    public boolean isLoginLinkDisplayed() {
+        wait.until(ExpectedConditions.visibilityOf(loginLink));
+        return loginLink.isDisplayed();
     }
 
 }
