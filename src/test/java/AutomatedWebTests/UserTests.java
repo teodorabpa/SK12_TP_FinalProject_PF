@@ -37,6 +37,7 @@ public class UserTests extends TestObject {
         HomePage homePage = new HomePage(webDriver);
         Header header = new Header(webDriver);
         LoginPage loginPage = new LoginPage(webDriver);
+        ToastContainer toastContainer = new ToastContainer(webDriver);
         ProfilePage profilePage = new ProfilePage(webDriver);
 
         homePage.navigateTo();
@@ -48,6 +49,8 @@ public class UserTests extends TestObject {
         loginPage.checkRememberMe();
         Assert.assertTrue(loginPage.isCheckedRememberMe(), "Remember me is not checked");
         loginPage.clickSignIn();
+        String message = toastContainer.getAlertText();
+        Assert.assertEquals(message, "Successful login!");
         header.clickProfile();
         Assert.assertTrue(profilePage.isUrlLoaded(userId), "Current page is not the profile page for " + userId + " user");
         header.clickSignOut();
@@ -55,11 +58,12 @@ public class UserTests extends TestObject {
     }
 
     @Test(dataProvider = "getUserCredentials", groups = "Login")
-    public void loginUnsuccessfulTest(String username, String password, String userId){
+    public void loginUnsuccessfulWrongPasswordTest(String username, String password, String userId){
         WebDriver webDriver = super.getWebDriver();
         HomePage homePage = new HomePage (webDriver);
         Header header = new Header (webDriver);
         LoginPage loginPage = new LoginPage (webDriver);
+        ToastContainer toastContainer = new ToastContainer(webDriver);
 
         homePage.navigateTo();
         header.clickLogin();
@@ -67,6 +71,46 @@ public class UserTests extends TestObject {
         loginPage.fillInPassword(password +"1");
         loginPage.clickSignIn();
         Assert.assertTrue(loginPage.isUrlLoaded(), "Login page url is not loaded");
+        String message = toastContainer.getAlertText();
+        Assert.assertEquals(message, "Ivalid password");
+
+    }
+
+    @Test
+    public void loginUnsuccessfulUsernameIsMissingTest() {
+        WebDriver webDriver = super.getWebDriver();
+        HomePage homePage = new HomePage (webDriver);
+        Header header = new Header (webDriver);
+        LoginPage loginPage = new LoginPage (webDriver);
+        ToastContainer toastContainer = new ToastContainer(webDriver);
+
+        homePage.navigateTo();
+        header.clickLogin();
+        loginPage.fillInUserName("");
+        loginPage.fillInPassword("password");
+        loginPage.clickSignIn();
+        Assert.assertTrue(loginPage.isUrlLoaded(), "Login page url is not loaded");
+        String message = toastContainer.getAlertText();
+        Assert.assertEquals(message, "UsernameOrEmail cannot be empty");
+
+    }
+
+    @Test
+    public void loginUnsuccessfulPasswordMissingTest(){
+        WebDriver webDriver = super.getWebDriver();
+        HomePage homePage = new HomePage (webDriver);
+        Header header = new Header (webDriver);
+        LoginPage loginPage = new LoginPage (webDriver);
+        ToastContainer toastContainer = new ToastContainer(webDriver);
+
+        homePage.navigateTo();
+        header.clickLogin();
+        loginPage.fillInUserName("T@P.com3");
+        loginPage.fillInPassword("");
+        loginPage.clickSignIn();
+        Assert.assertTrue(loginPage.isUrlLoaded(), "Login page url is not loaded");
+        String message = toastContainer.getAlertText();
+        Assert.assertEquals(message, "Password cannot be empty");
 
     }
 
@@ -76,6 +120,7 @@ public class UserTests extends TestObject {
         HomePage homePage = new HomePage(webDriver);
         Header header = new Header (webDriver);
         LoginPage loginPage = new LoginPage(webDriver);
+        ToastContainer toastContainer = new ToastContainer(webDriver);
 
         homePage.navigateTo();
         header.clickLogin();
@@ -84,6 +129,8 @@ public class UserTests extends TestObject {
         loginPage.clickSignIn();
         header.clickSignOut();
         Assert.assertTrue(loginPage.isUrlLoaded(), "Login page url is not loaded");
+        String message = toastContainer.getAlertText();
+        Assert.assertEquals(message, "Successful logout!");
 
     }
 
